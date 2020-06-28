@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+// Info: https://www.baeldung.com/spring-boot-json
+
 @RestController
 @RequestMapping("/calculadora")
 public class CalculadoraController {
-
-    // Info: https://www.baeldung.com/spring-boot-json
+    
     @PostMapping("/")
     public CalculadoraResponse calcular(@RequestBody CalculadoraRequest rq) {
 
